@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Line Tyre</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+.navbar{
+    margin-bottom: 20px;
+}
+        .logo img {
+            width: 100px;
+        }
+
+        .navlink {
+            list-style: none;
+            display: flex;
+        }
+
+        .navlink li {
+            margin-right: 20px;
+        }
+
+        .navlink li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+    .navlink li a:hover{
+        color: yellow;
+    }
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu-toggle i {
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .feedback-image img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+    background-color: #343434; /* Footer ka background color */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Padding for the top and bottom */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Icons ko right side par rakhne ke liye */
+    align-items: center; 
+    width:100%/* Center the content vertically */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-left: 10px; /* Add spacing between icons */
+}
+
+.social-icons a {
+    color: white; /* Icon color */
+}
+
+.social-icons a:hover {
+    color: #f18930; /* Hover color for icons */
+}
+        /* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .navlink {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu-toggle i {
+                display: block;
+            }
+
+            .menu-active .navlink {
+                display: flex;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .navlink li {
+                margin-bottom: 10px;
+            }
+        }
+        @media only screen and (min-width: 768px) {
+    footer {
+        padding: 20px 30px; /* Padding for the top and bottom */
+    }
+
+    .footer-content {
+        width: 70%; /* Footer content ka width set karein */
+    }
+
+    .social-icons {
+        text-align: right; /* Icons ko right align karein */
+    }
+
+    .social-icons li {
+        margin-left: 15px; /* Add spacing between icons */
+    }
+
+    p {
+        text-align: left; /* Text ko left align karein */
+    }
+}
+        
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <a href="Top Line Tyre"><i>Top Line Tyre</i></a>
+    </div>
+    <nav class="navbar">
+        <ul class="navlink">
+            <li><a href="./index.html" target="_blank">Home</a></li>
+            <li><a href="../About Us.html" target="_blank">About Us</a></li>
+            <li><a href="./Blog.html" target="_blank">Blog</a></li>
+            <li><a href="./Contact Us.html" target="_blank">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle">
+        <i class='bx bx-menu'></i>
+    </div>
+</header>
+
+<header>
+    <section id="feedback-form">
+        <div class="feedback-image">
+           <center> <img src="2749970.jpg" alt="Feedback Image"></center>
+        </div>
+    </section>
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</header>
+
+<footer>
+    <div class="footer-content">
+        <ul class="social-icons">
+            <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+            <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+            <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+            <li><a href=""><i class='bx bxl-linkedin'></i></a></li>
+        </ul>
+    </div>
+    <p>&copy; 2023 your company. All rights reserved</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
